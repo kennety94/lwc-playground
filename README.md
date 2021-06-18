@@ -1,3 +1,7 @@
+# Importante!!!
+
+**Para testar o componente de profileItem é preciso fazer upar como recurso estático o SVG que está na pasta assets, e nomeá-lo como SF_Logo.**
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
