@@ -1,0 +1,22 @@
+/* :host {
+  --vivinho-default-color: green;
+} */
+
+svg use {
+  fill: var(--vivinho-default-color);
+}
+
+.vivinho {
+  width: 80px;
+  height: 80px;
+  transition: width 0.5s;
+}
+
+.vivinho:hover {
+  transform: scale(1.1);
+}
+
+.vivinho-wrapper {
+  margin: 3px;
+  height: 40%;
+}

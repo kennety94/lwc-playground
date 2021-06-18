@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This event is fired when a profile is hovered.</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <description>Current profile selected</description>
+        <fieldName>profileSelected</fieldName>
+    </lightningMessageFields>
+    <masterLabel>ProfileSelected</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,24 @@
+<template>
+  <article class="slds-card">
+    <div class="slds-card__body slds-card__body_inner slds-grid slds-gutters">
+      <div class="slds-col slds-size_2-of-3">
+        <div class="label-wrapper">
+          <p class="label">Perfil do Cliente: </p> <lightning-helptext content="You'll receive weekly updates"></lightning-helptext>
+        </div>
+        <div class="profile-wrapper">
+          <template for:each={vivinhoInfos.vivinhos} for:item="profile">
+            <c-profile-item
+              key={profile.colorName}
+              profile={profile}
+              onhovered={handleHoverProfile}
+              onleave={handleLeave}
+            ></c-profile-item>
+          </template>
+        </div>
+      </div>
+      <div class="slds-col slds-size_1-of-3">
+        <c-profile-subtitle></c-profile-subtitle>
+      </div>
+    </div>
+  </article>
+</template>
