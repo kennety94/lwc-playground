@@ -1,6 +1,6 @@
 <template>
   <div class="vivinho-wrapper" if:true={profile}>
-    <svg xmlns="http://www.w3.org/2000/svg" class="vivinho" onmouseover={handleHover} onmouseout={handleOut}>
+    <svg xmlns="http://www.w3.org/2000/svg" class="vivinho" style={profile.tag} onmouseover={handleHover} onmouseout={handleOut}>
       <use data-id={profile.colorName} href={svgURL}></use>
     </svg>
   </div>

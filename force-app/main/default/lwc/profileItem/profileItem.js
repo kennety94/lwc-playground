@@ -8,7 +8,7 @@ export default class ProfileItem extends LightningElement {
 
   connectedCallback() {
     if(this.profile) {
-      document.documentElement.style.setProperty('--vivinho-default-color', this.profile.color1);
+      // document.documentElement.style.setProperty('--vivinho-default-color', this.profile.color1);
       // var propName = '--vivinho-' + this.profile.colorName;
       // document.documentElement.style.setProperty(propName, this.profile.color1);
     }
