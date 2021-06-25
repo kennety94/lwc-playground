@@ -1,0 +1,40 @@
+<template>
+  <lightning-card  title="Test Screens">
+    <div class="slds-card__body slds-card__body_inner">
+      <div class="step-1">
+        <lightning-radio-group name="radioGroup"
+                            label="Radio Group"
+                            options={options}
+                            value={value}
+                            type="radio"></lightning-radio-group>
+      </div>
+      <div class="step-2 slds-hide">
+        <lightning-combobox
+            name="progress"
+            label="Status"
+            value={value}
+            placeholder="Select Progress"
+            options={optionsList}
+            onchange={handleChange} ></lightning-combobox>
+      </div>
+      <div class="step-3 slds-hide">
+        <lightning-input type="text" label="Enter some text" value="Stark Industries" readonly></lightning-input>
+      </div>
+    </div>
+    
+    <div slot="footer" class="align-right">
+      <lightning-button
+        if:true={showPreviousBtn} 
+        variant="neutral" 
+        label="Previous" 
+        onclick={handlePreviousStep} 
+        class="slds-var-m-left_x-small"></lightning-button>
+      <lightning-button 
+        if:true={showNextBtn} 
+        variant="brand" 
+        label="Next" 
+        onclick={handleNextStep}
+        class="slds-var-m-left_x-small"></lightning-button>
+    </div>
+  </lightning-card>  
+</template>
